@@ -75,8 +75,10 @@ Library.delete_book(book_id)
 
 Usando el siguiente formato:
 
-`ID: 123 - (0439554934) Harry Potter and the Philosopher's Stone, por J.K. Rowling - Año: 2000`
-`ID: 324 - (9786070728792) Cien Años de Soledad, por Gabriel García Marquez - Año: 1999`
+```console
+ID: 123 - (0439554934) Harry Potter and the Philosopher's Stone, por J.K. Rowling - Año: 2000
+ID: 324 - (9786070728792) Cien Años de Soledad, por Gabriel García Marquez - Año: 1999
+```
 
 ### 7. Regresar una lista libros para diferentes solicitudes.
 
