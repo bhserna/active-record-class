@@ -14,9 +14,9 @@ y probando las funciones dentro de `bin/rails console`.
 ## El sistema nos debe permitir...
 
 
-### 1. Registrar libros
+1. **Registrar libros**
 
-Con"Nombre", "Nombre del autor", "ISBN", "Año de publicación" y "Número de copias"
+Con "Nombre", "Nombre del autor", "ISBN", "Año de publicación" y "Número de copias"
 
 Ej.
 
@@ -30,7 +30,7 @@ attrs = {
 Library.register_book(attrs)
 ```
 
-### 2. Poder buscar un libro por el id del registro
+2. **Poder buscar un libro por el id del registro**
 
 Regresando la información del libro con el siguiente formato:
 
@@ -43,18 +43,18 @@ Año de publicación: 2000
 Número de copias: 5
 ```
 
-### 3. Poder buscar un libro por ISBN
+3. **Poder buscar un libro por ISBN**
 
 Regresar el libro con el mismo formato.
 
-### 4. Regresar una lista de todos los libros
+4. **Regresar una lista de todos los libros**
 
 Usando el siguiente formato:
 
 `ID: 123 - (0439554934) Harry Potter and the Philosopher's Stone, por J.K. Rowling - Año: 2000`
 `ID: 324 - (9786070728792) Cien Años de Soledad, por Gabriel García Marquez - Año: 1999`
 
-### 5. Poder actualizar los atributos de un libro
+5. **Poder actualizar los atributos de un libro**
 
 Pasando su id y los atributos que queremos modificar.
 
@@ -70,7 +70,7 @@ attrs = {
 Library.update_book(book_id, attrs)
 ```
 
-### 6. Poder eliminar un libro con su id.
+6. **Poder eliminar un libro con su id.**
 
 Ej.
 
@@ -78,13 +78,13 @@ Ej.
 Library.delete_book(book_id)
 ```
 
-### 7. Regresar una lista de todos los libros ordenados por año de publicación ascendente.
+7. **Regresar una lista de todos los libros ordenados por año de publicación ascendente.**
 
-### 8. Regresar una lista de todos los libros ordenados por año de publicación descendente.
+8. **Regresar una lista de todos los libros ordenados por año de publicación descendente.**
 
-### 9. Regresar una lista de todos los libros publicados en cierto año con el mismo formato.
+9. **Regresar una lista de todos los libros publicados en cierto año con el mismo formato.**
 
-### 10. Regresar una lista con los nombres de todos los autores de los que tenemos registro.
+10. **Regresar una lista con los nombres de todos los autores de los que tenemos registro.**
 
 Ej.
 
@@ -93,14 +93,14 @@ Ej.
 - Gabriel García Marquez
 ```
 
-### 11. Regresar una lista con todos los ISBN que contamos de forma ascendente.
+11. **Regresar una lista con todos los ISBN que contamos de forma ascendente.**
 
 ```console
 - 0439554934
 - 9786070728792
 ```
 
-### 12. Regresar una lista con los nombres de todos los autores y el número de libros (no copias) con los que contamos de ellos.
+12. **Regresar una lista con los nombres de todos los autores y el número de libros (no copias) con los que contamos de ellos.**
 
 Ej.
 
@@ -108,7 +108,6 @@ Ej.
 - J.K. Rowling (7)
 - Gabriel García Marquez (5)
 ```
-
 
 ## Referencia
 
