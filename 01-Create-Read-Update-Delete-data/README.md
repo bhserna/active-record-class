@@ -120,6 +120,7 @@ Ej.
 `bin/rails generate model User name birthday:date`
 
 * http://guides.rubyonrails.org/getting_started.html#creating-the-article-model
+* http://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/SchemaStatements.html#method-i-create_table
 
 ### ¿Como correr una migración?
 
