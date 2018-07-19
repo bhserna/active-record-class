@@ -1,5 +1,9 @@
 # Create Read Update and Delete data (CRUD)
 
+* [Referencia](#referencia)
+* [Ejercicios en la consola](#ejercicios-en-la-consola)
+* [Proyecto](#proyecto)
+
 ## Referencia
 
 ### ¿Como crear un modelo usando el generador de Rails?
