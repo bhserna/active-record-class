@@ -93,15 +93,15 @@ nombre = Florinda, fecha = 9-feb-2003, país = Perú
 3. Actualiza la fecha de nacimiento de Ramón al `1-mar-1981` usando `User#update`.
 4. Actualiza el país de María a `Chile` usando `User#save`.
 5. Actualiza el país de todos los usuarios a `México` usando `User.update_all`.
-6. Crea usuarios a partir del siguiente arreglo de hashes:
+6. Crea usuarios a partir del siguiente arreglo de hashes.
 
 ```ruby
 [
-  { name: Jose, birthday: Date.new(2000, 10, 10), country: México },
-  { name: Juan, birthday: Date.new(1987, 7, 3), country: Colombia },
-  { name: Ricardo, birthday: Date.new(1999, 5, 4), country: Colombia },
-  { name: Juana, birthday: Date.new(2001, 4, 9), country: México },
-  { name: Josefa, birthday: Date.new(1993, 10, 8), country: México }
+  { name: "Jose", birthday: Date.new(2000, 10, 10), country: "México" },
+  { name: "Juan", birthday: Date.new(1987, 7, 3), country: "Colombia" },
+  { name: "Ricardo", birthday: Date.new(1999, 5, 4), country: "Colombia" },
+  { name: "Juana", birthday: Date.new(2001, 4, 9), country: "México" },
+  { name: "Josefa", birthday: Date.new(1993, 10, 8), country: "México" }
 ]
 ```
 
