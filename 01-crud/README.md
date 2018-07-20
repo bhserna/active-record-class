@@ -115,8 +115,8 @@ nombre = Florinda, fecha = 9-feb-2003, país = Perú
 "#{user.name}@example.com"
 
 # Es decir ahora el correo sería
-Jose@example.com
-Juanita@example.com
+# Jose@example.com
+# Juanita@example.com
 # ... según sea el nombre del usuario
 ```
 
