@@ -131,9 +131,17 @@ Crear un sistema para administrar los libros en una biblioteca.
 ### Consideraciones
 
 Por ahora no trabajaremos con los controladores y vistas, por lo que el
-sistema lo "expondremos" usando un módulo `Library` en la carpeta `/lib`
-y probando las funciones dentro de `bin/rails console`.
+sistema lo "expondremos" usando un módulo `Library` en la carpeta
+`app/models` y probando las funciones dentro de `bin/rails console`.
 
+Ej..
+
+```ruby
+module Library
+  def self.register_book(attrs)
+  end
+end
+```
 
 ### El sistema nos debe permitir...
 
