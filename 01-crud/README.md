@@ -105,11 +105,11 @@ nombre = Florinda, fecha = 9-feb-2003, país = Perú
 ]
 ```
 
-6. Encuentra a todos los usuarios que son de México usando `User.where`.
-7. Encuetra al usuario de nombre Juana y cambia su nombre a Juanita.
-8. Agrega a la tabla de usuarios un nuevo atributo `email`.
-9. Actualiza el `email` de todos los usuarios poniendo `user@example.com`.
-10. Actualiza el `email` de todos los usuarios con:
+7. Encuentra a todos los usuarios que son de México usando `User.where`.
+8. Encuetra al usuario de nombre Juana y cambia su nombre a Juanita.
+9. Agrega a la tabla de usuarios un nuevo atributo `email`.
+10. Actualiza el `email` de todos los usuarios poniendo `user@example.com`.
+11. Actualiza el `email` de todos los usuarios con:
 
 ```ruby
 "#{user.name}@example.com"
@@ -120,8 +120,8 @@ Juanita@example.com
 # ... según sea el nombre del usuario
 ```
 
-10. Encuentra a un usuario (usando `find_by`) de Colombia y ¡bórralo!.
-11. Encuentra a todos los usuarios (usando `where`) de Colombia y ¡bórralos!.
+12. Encuentra a un usuario (usando `find_by`) de Colombia y ¡bórralo!.
+13. Encuentra a todos los usuarios (usando `where`) de Colombia y ¡bórralos!.
 
 
 ## Proyecto
