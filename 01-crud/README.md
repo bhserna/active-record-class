@@ -80,6 +80,16 @@ Genera una migración para agregar el atributo
 
 * http://guides.rubyonrails.org/active_record_migrations.html#creating-a-standalone-migration
 
+### ¿Como ordenar una lista de records?
+
+```ruby
+User.order(:name)
+User.order(name: :asc)
+User.order(name: :desc)
+```
+
+* http://guides.rubyonrails.org/active_record_querying.html#ordering
+
 ## Ejercicios en la consola
 
 1. Crea 2 usuarios diferentes usando `User.new` y `User#save`.
