@@ -8,7 +8,7 @@
 
 ### ¿Como crear una aplicación con Rails?
 
-`rails new library`
+`rails new example_app`
 
 * http://guides.rubyonrails.org/getting_started.html#creating-the-blog-application
 
@@ -143,6 +143,7 @@ nombre = Florinda, fecha = 9-feb-2003, país = Perú
 ## Proyecto
 
 Crear un sistema para administrar los libros en una biblioteca.
+Llamaremos a este proyecto como `my_library`.
 
 ### Consideraciones
 
