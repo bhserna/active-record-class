@@ -341,3 +341,20 @@ attrs = {name: nil, author_name: "Mario Benedetti"}
 Catalog.update_book(book_id, attrs)
 # Aquí también solo debe de actualizarse el nombre del autór.
 ```
+
+### 13. Al registrar un libro, crear un record `Author`.
+
+Hasta este momento al registrar un libro estamos guardando el nombre del
+autor como un atributo de `Book`. Ahora en lugar de tener la columna
+`author_name` vamos a tener una columna `author_id` y un nuevo record
+`Author` con un atributo `name`.
+
+De forma que al hacer...
+
+```ruby
+Catalog.register_book(name: "Mi libro", author_name: "Carlos")
+```
+
+Se crea un record `Author` y un record `Book` con el id de ese autor.
+También considera que si un autor ya fue creado se debe usar el record
+existente en lugar de crear uno nuevo.
