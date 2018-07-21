@@ -173,7 +173,7 @@ Ej.
 attrs = {
   name: "Cien Años de Soledad",
   author_name: "Gabriel García Marquez"
-  isbn: 12341234,
+  isbn: "12341234",
   published_on: Date.new(2000, 10, 20),
   copies_count: 30
 }
@@ -187,7 +187,7 @@ Algunos libros que puedes usar como ejemplo (datos no reales):
 {
   name: "The Outsider",
   author_name: "Stephen King"
-  isbn: 12341234,
+  isbn: "12341234",
   published_on: Date.new(2007, 10, 20),
   copies_count: 30
 }
@@ -195,7 +195,7 @@ Algunos libros que puedes usar como ejemplo (datos no reales):
 {
   name: "The President Is Missing",
   author_name: "Bill Clinton"
-  isbn: 87623464,
+  isbn: "87623464",
   published_on: Date.new(2015, 10, 20),
   copies_count: 10
 }
@@ -203,7 +203,7 @@ Algunos libros que puedes usar como ejemplo (datos no reales):
 {
   name: "Harry Potter and the Sorcerer's Stone",
   author_name: "J.K. Rowling"
-  isbn: 876212344,
+  isbn: "876212344",
   published_on: Date.new(2016, 2, 20),
   copies_count: 10
 }
@@ -211,7 +211,7 @@ Algunos libros que puedes usar como ejemplo (datos no reales):
 {
   name: "Something in the Water",
   author_name: "Catherine Steadman"
-  isbn: 876212341234,
+  isbn: "876212341234",
   published_on: Date.new(2017, 2, 20),
   copies_count: 30
 }
@@ -219,7 +219,7 @@ Algunos libros que puedes usar como ejemplo (datos no reales):
 {
   name: "Harry Potter and the Goblet of Fire",
   author_name: "J.K. Rowling"
-  isbn: 543876212344,
+  isbn: "543876212344",
   published_on: Date.new(2015, 2, 20),
   copies_count: 20
 }
@@ -227,7 +227,7 @@ Algunos libros que puedes usar como ejemplo (datos no reales):
 {
   name: "Little Fires Everywhere",
   author_name: "Celeste NG"
-  isbn: 5438762109874,
+  isbn: "5438762109874",
   published_on: Date.new(2016, 2, 20),
   copies_count: 12
 }
