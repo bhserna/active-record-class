@@ -173,7 +173,7 @@ attrs = {
   name: "Cien Años de Soledad",
   author_name: "Gabriel García Marquez"
   isbn: 12341234,
-  publicated_on: Date.new(2000, 10, 20),
+  published_on: Date.new(2000, 10, 20),
   copies_count: 30
 }
 
