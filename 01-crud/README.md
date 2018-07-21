@@ -6,6 +6,12 @@
 
 ## Referencia
 
+### ¿Como crear una aplicación con Rails?
+
+`rails new library`
+
+* http://guides.rubyonrails.org/getting_started.html#creating-the-blog-application
+
 ### ¿Como crear un modelo usando el generador de Rails?
 
 `rails generate model User name birthday:date`
