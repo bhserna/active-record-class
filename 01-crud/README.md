@@ -8,14 +8,14 @@
 
 ### ¿Como crear un modelo usando el generador de Rails?
 
-`bin/rails generate model User name birthday:date`
+`rails generate model User name birthday:date`
 
 * http://guides.rubyonrails.org/getting_started.html#creating-the-article-model
 * http://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/SchemaStatements.html#method-i-create_table
 
 ### ¿Como correr una migración?
 
-`bin/rails db:migrate`
+`rails db:migrate`
 
 * http://guides.rubyonrails.org/getting_started.html#running-a-migration
 
@@ -70,7 +70,7 @@ user.destroy
 
 Genera una migración para agregar el atributo
 
-`bin/rails generate migration add_country_to_users countr`
+`rails generate migration add_country_to_users countr`
 
 * http://guides.rubyonrails.org/active_record_migrations.html#creating-a-standalone-migration
 
@@ -131,13 +131,13 @@ Crear un sistema para administrar los libros en una biblioteca.
 ### Consideraciones
 
 Por ahora no trabajaremos con los controladores y vistas, por lo que el
-sistema lo "expondremos" usando un módulo `Library` en la carpeta
-`app/models` y probando las funciones dentro de `bin/rails console`.
+sistema lo "expondremos" usando un módulo `Catalog` en la carpeta
+`app/models` y probando las funciones dentro de `rails console`.
 
 Ej..
 
 ```ruby
-module Library
+module Catalog
   def self.register_book(attrs)
   end
 end
@@ -156,10 +156,12 @@ Ej.
 attrs = {
   name: "Cien Años de Soledad",
   author_name: "Gabriel García Marquez"
-  # ...
+  isbn: 12341234,
+  publicated_on: Date.new(2000, 10, 20),
+  copies_count: 30
 }
 
-Library.register_book(attrs)
+Catalog.register_book(attrs)
 ```
 
 ### 2. Poder buscar un libro por el id del registro
@@ -192,7 +194,7 @@ attrs = {
   # ...
 }
 
-Library.update_book(book_id, attrs)
+Catalog.update_book(book_id, attrs)
 ```
 
 ### 5. Poder eliminar un libro con su id.
@@ -200,7 +202,7 @@ Library.update_book(book_id, attrs)
 Ej.
 
 ```
-Library.delete_book(book_id)
+Catalog.delete_book(book_id)
 ```
 
 ### 6. Regresar una lista de todos los libros
@@ -242,4 +244,31 @@ Ej.
 ```console
 - J.K. Rowling (7)
 - Gabriel García Marquez (5)
+```
+
+### 11. Validar que al registrar un libro este tenga nombre.
+
+Es decir que si alguién intenta registrar un libro sin nombre, el
+programa debe regresar un mensaje de error.
+
+Ej.
+
+```ruby
+attrs = {}
+Catalog.register_book(attrs)
+=> "Error: No se puede registrar un libro sin nombre"
+```
+
+### 12. Validar que al actualizar un libro no se pueda borrar el nombre.
+
+Ej.
+
+```ruby
+attrs = {author_name: "Mario Benedetti"}
+Catalog.update_book(book_id, attrs)
+# Aquí solo debe de actualizarse el nombre del autór
+
+attrs = {name: nil, author_name: "Mario Benedetti"}
+Catalog.update_book(book_id, attrs)
+# Aquí también solo debe de actualizarse el nombre del autór.
 ```
