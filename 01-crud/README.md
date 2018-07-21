@@ -342,7 +342,7 @@ Catalog.update_book(book_id, attrs)
 # Aquí también solo debe de actualizarse el nombre del autór.
 ```
 
-### 13. Al registrar un libro, crear un record `Author`.
+### 13. Al registrar un libro crear un record `Author`.
 
 Hasta este momento al registrar un libro estamos guardando el nombre del
 autor como un atributo de `Book`. Ahora en lugar de tener la columna
